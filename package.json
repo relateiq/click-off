@@ -1,17 +1,20 @@
 {
-  "name": "bedrock",
+  "name": "click-off",
   "version": "0.1.0",
   "description": "a template for basic js packages",
   "main": "src/index.js",
   "author": "webdevs@salesforceiq.com",
   "license": "MIT",
-  "homepage": "https://github.com/relateiq/bedrock",
+  "homepage": "https://github.com/relateiq/click-off",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/relateiq/bedrock.git"
+    "url": "https://github.com/relateiq/click-off.git"
   },
   "bugs": {
-    "url": "https://github.com/relateiq/bedrock/issues"
+    "url": "https://github.com/relateiq/click-off/issues"
   },
   "iqproj": {
     "app": false
