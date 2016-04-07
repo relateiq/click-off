@@ -15,7 +15,7 @@ module.exports.listen = function listenForClickOff(elem, onClickOff, opts) {
 		}
 	}
 	eventListenerElement.addEventListener('mousedown', mousedownHandler);
-	eventListenerElement.on('mouseup', mouseupHandler);
+	eventListenerElement.addEventListener('mouseup', mouseupHandler);
 
 	return function unbindClickOffListeners() {
 		eventListenerElement.removeEventListener(mousedownHandler);

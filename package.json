@@ -26,6 +26,9 @@
     "postpublish": "git push"
   },
   "dependencies": {},
+  "browserify-shim": {
+
+  },
   "devDependencies": {
     "chokidar-cli": "~1.0.1",
     "tape": "~4.2.1"
