@@ -1,6 +1,6 @@
 {
   "name": "click-off",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a template for basic js packages",
   "main": "src/index.js",
   "author": "webdevs@salesforceiq.com",
@@ -26,9 +26,7 @@
     "postpublish": "git push"
   },
   "dependencies": {},
-  "browserify-shim": {
-
-  },
+  "browserify-shim": {},
   "devDependencies": {
     "chokidar-cli": "~1.0.1",
     "tape": "~4.2.1"
