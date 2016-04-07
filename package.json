@@ -1,7 +1,7 @@
 {
   "name": "click-off",
   "version": "0.1.1",
-  "description": "a template for basic js packages",
+  "description": "a simple library for listening for clicks that are not on an element",
   "main": "src/index.js",
   "author": "webdevs@salesforceiq.com",
   "license": "MIT",
