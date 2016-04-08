@@ -1,9 +1,10 @@
 module.exports.listen = function listenForClickOff(elem, onClickOff, opts) {
+	var parsedOpts = opts || {}
 	// we use mousedown to check the target because the click could cause the element to be removed and it'll look like it's not in us
 	var lastMouseDownWasOutside = false;
 	// check again after timeout
-	var eventListenerElement = opts.eventListenerElement || document;
-	var isInMe = opts.isInMe;
+	var eventListenerElement = parsedOpts.eventListenerElement || document;
+	var isInMe = parsedOpts.isInMe;
 
 	function mousedownHandler(e) {
 		lastMouseDownWasOutside = !(elem === e.target || elem.contains(e.target)) && !(isInMe && isInMe(e.target));
