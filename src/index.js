@@ -10,7 +10,7 @@ module.exports.listen = function listenForClickOff(elem, onClickOff, opts) {
 		if (typeof elem === 'function') {
 			elem = elem();
 		}
-		lastMouseDownWasOutside = !(elem === e.target || elem.contains(e.target)) && !(isInMe && isInMe(e.target));
+		lastMouseDownWasOutside = !elem || !(elem === e.target || elem.contains(e.target)) && !(isInMe && isInMe(e.target));
 	}
 
 	function mouseupHandler(e) {
